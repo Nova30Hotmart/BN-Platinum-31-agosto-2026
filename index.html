@@ -504,10 +504,9 @@ document.querySelectorAll('.bcard').forEach(function(c){
 });
 
 /* ==========================================================
-   ENDPOINT del formulario — pendiente de definir.
-   Vacío: valida y redirige a gracias.html sin enviar datos.
+   ENDPOINT APONTANDO PARA A SERVERLESS FUNCTION DA VERCEL
    ========================================================== */
-var ENDPOINT = "";
+var ENDPOINT = "/api/subscribe";
 var GRACIAS  = "gracias.html";
 
 var btn = document.getElementById('submitBtn');
@@ -527,15 +526,24 @@ btn.addEventListener('click', function(){
   if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(data.email)){
     fallar('Revisa tu correo electrónico.'); document.getElementById('email').focus(); return;
   }
+  
   data.tier = 'platinum';
   data.evento = 'camino-a-black-november-presencial';
 
   btn.textContent = 'Enviando...'; btn.disabled = true;
 
   if (ENDPOINT){
-    fetch(ENDPOINT, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data)})
-      .then(function(){ window.location.href = GRACIAS; })
-      .catch(function(){
+    fetch(ENDPOINT, {
+      method:'POST', 
+      headers:{'Content-Type':'application/json'}, 
+      body: JSON.stringify(data)
+    })
+      .then(function(response){ 
+        if (!response.ok) throw new Error('Falha na resposta do servidor');
+        window.location.href = GRACIAS; 
+      })
+      .catch(function(error){
+        console.error(error);
         fallar('No pudimos enviar tu registro. Intenta de nuevo en unos segundos.');
         btn.textContent = 'Confirmar mi registro'; btn.disabled = false;
       });
