@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Camino a Black November · Presencial · Comunidad Platinum</title>
+<meta name="description" content="31 de agosto, oficinas de Google en Ciudad de México. Una mañana para armar tu campaña de Black November completa.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Camino a Black November · Presencial · Comunidad Platinum">
+<meta property="og:description" content="31 de agosto · encuentro presencial en las oficinas de Google, Ciudad de México.">
+<meta property="og:image" content="https://assets.hotmartcomunidades.com/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="https://assets.hotmartcomunidades.com/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="https://assets.hotmartcomunidades.com/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="https://assets.hotmartcomunidades.com/apple-touch-icon.png">
+<link rel="manifest" href="https://assets.hotmartcomunidades.com/site.webmanifest">
+
+<link rel="stylesheet" href="https://assets.hotmartcomunidades.com/brand.css">
+<link rel="stylesheet" href="https://assets.hotmartcomunidades.com/components.css">
+<link rel="stylesheet" href="https://assets.hotmartcomunidades.com/tiers/platinum.css">
+
+<style>
+/* ===== Fuentes del CDN declaradas inline para que rendericen en previsualización ===== */
+@font-face{font-family:'Hotmart Display';src:url("https://assets.hotmartcomunidades.com/fonts/HotmartDisplay-Regular.woff2") format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Hotmart Sans';src:url("https://assets.hotmartcomunidades.com/fonts/HotmartSansLight.woff2") format('woff2');font-weight:300;font-display:swap}
+@font-face{font-family:'Hotmart Sans';src:url("https://assets.hotmartcomunidades.com/fonts/HotmartSansRegular.woff2") format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Hotmart Sans';src:url("https://assets.hotmartcomunidades.com/fonts/HotmartSansBold.woff2") format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Hotmart Sans';src:url("https://assets.hotmartcomunidades.com/fonts/HotmartSans-Italic.woff2") format('woff2');font-weight:400;font-style:italic;font-display:swap}
+
+:root{
+  --ink:#060606;--orange:#FF4000;--lava-deep:#D63400;--ring:#C6C6CE;
+  --cream:#EFEAE2;--ash-soft:#938C82;--accent:#C7CCD1;
+  --metal:linear-gradient(118deg,#f2f5f8 0%,#e9ecf0 20%,#c7ccd1 42%,#fbfcfd 55%,#b6bcc4 74%,#8d939b 100%);
+  --serif:'Hotmart Display',Georgia,serif;
+  --grain:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22180%22%20height%3D%22180%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.85%22%20numOctaves%3D%222%22%20stitchTiles%3D%22stitch%22/%3E%3C/filter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url%28%23n%29%22/%3E%3C/svg%3E');
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:#fff;font-family:'Hotmart Sans',Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+.disp{font-family:var(--serif);font-weight:400;line-height:1.14;letter-spacing:-.015em;padding-bottom:.04em}
+em{font-style:normal;color:var(--orange)}
+.metal{background:var(--metal);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-box-decoration-break:clone;box-decoration-break:clone;padding-bottom:.06em}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--orange);margin-bottom:20px}
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:11px;font-family:inherit;font-weight:700;font-size:14.5px;padding:16px 28px;border-radius:2px;border:none;cursor:pointer;text-decoration:none;transition:transform .2s,box-shadow .2s;color:#fff;background:var(--orange)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 40px -12px rgba(255,64,0,.6)}
+.btn.lg{font-size:16px;padding:18px 34px}
+.btn:disabled{opacity:.6;cursor:default;transform:none;box-shadow:none}
+.micro{margin-top:14px;font-size:12.5px;color:rgba(255,255,255,.42);letter-spacing:.02em}
+.star{position:absolute;aspect-ratio:1;background:#fff;border-radius:50%;opacity:var(--o);animation:tw 3.6s var(--d) ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:calc(var(--o)*.35)}50%{opacity:var(--o)}}
+.grain{position:absolute;inset:0;background-image:var(--grain);background-size:180px 180px;opacity:.05;mix-blend-mode:overlay;pointer-events:none;z-index:4}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+@keyframes sheen{0%,100%{background-position:0% center}50%{background-position:100% center}}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ===== PRELOAD ===== */
+.preload{position:fixed;inset:0;z-index:100;background:#060606;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px;overflow:hidden;cursor:pointer;animation:plOut .55s 2.1s forwards}
+.preload .pmeta{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;width:min(600px,86vw)}
+.preload .pl-logo{height:30px;opacity:0;animation:plFade .5s .15s forwards;margin-bottom:6px}
+.preload .pl-word{overflow:hidden;padding-bottom:.16em}
+.preload .pl-word span{display:block;font-family:var(--serif);font-size:clamp(19px,2.4vw,26px);color:rgba(255,255,255,.92);line-height:1.18;transform:translateY(120%);animation:plUp .7s .3s cubic-bezier(.16,1,.3,1) forwards}
+.preload .pl-word.two span{animation-delay:.45s}
+.preload .ploadbar{position:relative;width:200px;height:2px;background:rgba(255,255,255,.12);border-radius:2px;overflow:hidden}
+.preload .pbarfill{position:absolute;left:0;top:0;height:100%;width:0;background:var(--metal);animation:loadfill 1.5s .55s cubic-bezier(.3,.7,.3,1) forwards}
+.preload .pl-skip{position:absolute;bottom:30px;left:0;right:0;text-align:center;color:rgba(255,255,255,.28);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:0;animation:plFade .5s 1.3s forwards}
+@keyframes loadfill{to{width:100%}}@keyframes plFade{to{opacity:1}}@keyframes plUp{to{transform:none}}
+@keyframes plOut{to{opacity:0;visibility:hidden;pointer-events:none}}
+
+/* ===== NAV ===== */
+.nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .35s,border-color .35s;border-bottom:1px solid transparent}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;transition:padding .35s}
+.nav .logo img{height:23px;display:block}
+.nav .actions{display:flex;align-items:center;gap:18px}
+.tier-pill{display:inline-flex;align-items:center;gap:8px;line-height:1.6;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.tier-pill .td{width:8px;height:8px;border-radius:50%;background:var(--ring)}
+.nav-cta{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:700;color:#fff;background:var(--orange);padding:11px 18px;border-radius:2px;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 16px 40px -12px rgba(255,64,0,.6)}
+.nav.solid{background:rgba(8,7,6,.85);backdrop-filter:blur(12px);border-color:rgba(255,255,255,.08)}
+.nav.solid .wrap{padding:11px 32px}
+@media(max-width:560px){.tier-pill{display:none}.nav-cta{padding:10px 15px;font-size:12.5px}.nav .wrap{padding:14px 20px}}
+
+/* ===== HERO ===== */
+.hero{position:relative;display:flex;align-items:center;background:radial-gradient(130% 100% at 74% 42%,#15151a 0%,#0b0b0d 46%,#060606 100%);overflow:hidden}
+.hero .stars{position:absolute;inset:0;z-index:1}
+.hero-grid{position:relative;z-index:5;display:grid;grid-template-columns:1.06fr .94fr;gap:48px;align-items:center;width:100%;padding-top:150px;padding-bottom:96px}
+.kicker{font-family:var(--serif);font-size:clamp(19px,2.3vw,28px);line-height:1.3;color:rgba(255,255,255,.55);margin-bottom:4px}
+.giant{font-family:var(--serif);font-weight:400;font-size:clamp(44px,6.4vw,88px);line-height:1.1;letter-spacing:-.015em;margin:0 0 24px;padding-bottom:.04em;animation:sheen 6.5s ease-in-out infinite}
+.factbar{display:flex;flex-wrap:wrap;margin-bottom:30px;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+.fact{padding:16px 26px 16px 0;margin-right:26px;border-right:1px solid rgba(255,255,255,.12)}
+.fact:last-child{border-right:none;margin-right:0;padding-right:0}
+.fact .fl{font-size:9.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.42);margin-bottom:5px}
+.fact .fv{font-family:var(--serif);font-weight:400;font-size:clamp(17px,1.7vw,20px);line-height:1.3;color:#fff;letter-spacing:-.01em}
+.fact .fv.accent{background:var(--metal);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent}
+@media(max-width:520px){.fact{padding-right:18px;margin-right:18px}}
+.hero .lead{font-size:clamp(17px,1.5vw,19px);line-height:1.55;max-width:480px;color:var(--cream)}
+.form-wrap{position:relative}
+.orb-back{position:absolute;left:50%;top:42%;transform:translate(-50%,-50%);width:min(560px,134%);aspect-ratio:1;z-index:0;display:grid;place-items:center;pointer-events:none}
+.orb-back .oglow{position:absolute;width:100%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(199,204,209,.34),transparent 62%);filter:blur(10px)}
+.orb-back .oring{position:absolute;border-radius:50%}
+.orb-back .r1{width:99%;aspect-ratio:1;border:1px dashed rgba(199,204,209,.3);animation:spin 52s linear infinite}
+.orb-back .r2{width:78%;aspect-ratio:1;border:1px solid rgba(255,255,255,.07);animation:spin 38s linear infinite reverse}
+.orb-back img{position:relative;width:86%;filter:drop-shadow(0 44px 88px rgba(0,0,0,.72));animation:float 9s ease-in-out infinite}
+
+/* ===== FORM ===== */
+.form-card{position:relative;z-index:2;width:100%;background:linear-gradient(158deg,rgba(23,23,27,.88),rgba(13,13,15,.92));backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(199,204,209,.42);border-radius:18px;padding:clamp(26px,3vw,36px);box-shadow:0 50px 100px -50px rgba(0,0,0,.9)}
+.form-card .fhead{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.6vw,30px);line-height:1.22;color:#fff;margin:6px 0 8px}
+.form-card .fsub{font-size:14px;color:rgba(255,255,255,.55);line-height:1.5}
+.limit{display:inline-flex;align-items:center;gap:9px;background:rgba(255,64,0,.12);border:1px solid rgba(255,64,0,.32);color:#fff;font-weight:700;font-size:12.5px;padding:9px 15px;border-radius:100px;margin-bottom:14px}
+.limit .ld{width:8px;height:8px;border-radius:50%;background:var(--orange);animation:apulse 1.9s infinite}
+@keyframes apulse{0%{box-shadow:0 0 0 0 rgba(255,64,0,.5)}70%{box-shadow:0 0 0 9px rgba(255,64,0,0)}100%{box-shadow:0 0 0 0 rgba(255,64,0,0)}}
+.deadline{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.62);text-align:center;line-height:1.5}
+.deadline b{color:var(--accent)}
+.field{margin-top:16px}
+.field label{display:block;font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:7px}
+.field input{width:100%;padding:13px 15px;font-family:inherit;font-size:15px;color:#fff;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:2px;transition:border-color .2s,background .2s}
+.field input::placeholder{color:rgba(255,255,255,.26)}
+.field input:focus{outline:none;border-color:var(--accent);background:rgba(255,255,255,.07)}
+.form-card .btn{width:100%;margin-top:24px}
+.ferror{display:none;margin-top:14px;font-size:13px;line-height:1.5;color:#FF8A66;border-left:2px solid var(--orange);padding-left:12px}
+.form-card .micro{text-align:center}
+
+/* ===== SECCIONES ===== */
+.section{position:relative;padding:88px 0;overflow:hidden}
+.section .wrap{position:relative;z-index:5}
+.sec-num{font-family:'Hotmart Sans';font-weight:300;font-size:32px;line-height:1;margin-bottom:12px;background:var(--metal);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2.disp{font-size:clamp(30px,4.4vw,52px);color:#fff;max-width:20ch}
+.section p.lead{font-size:17px;color:rgba(255,255,255,.64);max-width:640px;margin-top:18px;line-height:1.6}
+.s-pain{background:radial-gradient(120% 90% at 16% 0%,#131316,#0a0a0b 46%,#060606)}
+.s-what{background:#070708;border-top:1px solid rgba(255,255,255,.05)}
+.s-speak{background:radial-gradient(120% 100% at 50% 0%,#141317,#08080a 62%);border-top:1px solid rgba(255,255,255,.05)}
+.closing{background:radial-gradient(110% 100% at 50% 0%,#141317,#070708 58%);border-top:1px solid rgba(255,255,255,.05)}
+
+.pains{margin-top:40px;border-top:1px solid rgba(255,255,255,.09)}
+.prow{display:grid;grid-template-columns:70px 1fr;gap:22px;padding:26px 0;border-bottom:1px solid rgba(255,255,255,.09);align-items:start}
+.prow .pn{font-family:'Hotmart Sans';font-weight:300;font-size:26px;line-height:1;background:var(--metal);-webkit-background-clip:text;background-clip:text;color:transparent}
+.prow h3{font-size:19px;font-weight:700;color:#fff;margin-bottom:8px;line-height:1.35}
+.prow p{font-size:15.5px;color:rgba(255,255,255,.58);line-height:1.55;max-width:62ch}
+.pclose{margin-top:32px;font-size:17px;color:var(--cream);max-width:54ch;line-height:1.55}
+
+.bcards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.bcard{position:relative;background:linear-gradient(180deg,#141416,#0e0e10);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:30px;transition:transform .35s,border-color .35s;overflow:hidden}
+.bcard::after{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),rgba(199,204,209,.14),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
+.bcard:hover{transform:translateY(-4px);border-color:var(--accent)}
+.bcard:hover::after{opacity:1}
+.bcard .bdot{display:block;width:10px;height:10px;border-radius:50%;background:var(--metal);margin-bottom:18px}
+.bcard h3{font-family:var(--serif);font-weight:400;font-size:22px;color:#fff;margin-bottom:10px;line-height:1.28;position:relative}
+.bcard p{font-size:15px;color:rgba(255,255,255,.58);line-height:1.55;position:relative}
+@media(max-width:860px){.bcards{grid-template-columns:1fr}}
+
+.section.light{background:var(--cream);color:#0a0a0b;border-top:1px solid rgba(0,0,0,.07);border-bottom:1px solid rgba(0,0,0,.07)}
+.section.light .sec-num{background:none;color:#0a0a0b;-webkit-text-fill-color:#0a0a0b}
+.section.light .eyebrow{color:var(--lava-deep)}
+.section.light h2.disp{color:#0a0a0b;max-width:22ch}
+.section.light em{color:var(--lava-deep)}
+.light-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.light-note{border-left:2px solid rgba(10,10,12,.16);padding-left:24px}
+.dark-note{border-left:2px solid rgba(255,255,255,.16);padding-left:24px}
+.dark-note p{font-size:16px;color:rgba(255,255,255,.66);line-height:1.65}
+.dark-note p+p{margin-top:14px}
+.light-note p{font-size:16px;color:rgba(10,10,12,.7);line-height:1.65}
+.light-note p+p{margin-top:14px}
+.venue-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:56px;align-items:center}
+.venue-addr{font-family:var(--serif);font-size:clamp(18px,1.8vw,21px);line-height:1.45;color:#0a0a0b;margin-top:22px;max-width:24ch}
+.venue-note{margin-top:18px;font-size:14.5px;line-height:1.6;color:rgba(10,10,12,.6);max-width:44ch;border-left:2px solid rgba(10,10,12,.16);padding-left:18px}
+.venue-btn{display:inline-flex;align-items:center;gap:10px;margin-top:26px;font-weight:700;font-size:14.5px;padding:16px 28px;border-radius:2px;color:#fff;background:var(--orange);text-decoration:none;transition:transform .2s,box-shadow .2s}
+.venue-btn:hover{transform:translateY(-2px);box-shadow:0 16px 40px -12px rgba(255,64,0,.6)}
+.venue-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.venue-map{position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;background:#111;border:1px solid rgba(10,10,12,.14);box-shadow:0 40px 90px -50px rgba(0,0,0,.55)}
+.venue-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media(max-width:900px){.venue-grid{grid-template-columns:1fr;gap:34px}.venue-map{aspect-ratio:16/11}}
+@media(max-width:860px){.light-grid{grid-template-columns:1fr;gap:32px}}
+
+.spk{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.spkc{border:1px dashed rgba(199,204,209,.28);border-radius:8px;padding:34px 24px;text-align:center;background:linear-gradient(180deg,rgba(199,204,209,.05),rgba(255,255,255,.01))}
+.spkm{position:relative;width:96px;height:96px;margin:0 auto 20px;border-radius:50%;border:1px dashed rgba(199,204,209,.4);display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle at 50% 30%,rgba(199,204,209,.12),transparent 68%)}
+.spkm svg{width:64px;height:64px;display:block;fill:rgba(199,204,209,.34)}
+.spkm .qm{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--serif);font-size:30px;color:rgba(255,255,255,.82);text-shadow:0 4px 18px rgba(0,0,0,.6)}
+.spkc span{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+@media(max-width:860px){.spk{grid-template-columns:1fr}}
+
+.close-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center}
+.pass{position:relative;display:grid;grid-template-columns:1fr 178px;background:linear-gradient(158deg,#17171b,#0d0d0f);border:1px solid var(--accent);border-radius:18px;overflow:hidden;box-shadow:0 50px 100px -50px rgba(0,0,0,.85)}
+.pass .pmain{padding:30px 32px}
+.pass .prow2{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px}
+.pass .pbrand{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.pass .pclass{font-family:var(--serif);font-size:15px}
+.pass .ptitle{font-family:var(--serif);font-size:25px;color:#fff;margin-bottom:18px;line-height:1.24}
+.pass ul{list-style:none;display:grid;gap:12px}
+.pass li{display:grid;grid-template-columns:14px 1fr;gap:12px;font-size:14.5px;color:#ECE8E2;line-height:1.45}
+.pass .tick{margin-top:6px;width:10px;height:10px;border-radius:2px;background:var(--metal)}
+.pass .stub{position:relative;border-left:2px dashed rgba(255,255,255,.2);background:rgba(255,255,255,.02);padding:28px 20px;display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+.pass .sl{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.pass .sv{font-family:var(--serif);font-size:17px;line-height:1.35;color:#fff;margin-top:3px}
+.pass .barcode{height:40px;background:repeating-linear-gradient(90deg,#fff 0,#fff 2px,transparent 2px,transparent 4px,#fff 4px,#fff 5px,transparent 5px,transparent 9px);opacity:.85;border-radius:2px}
+.pass::before,.pass::after{content:"";position:absolute;right:164px;width:26px;height:26px;border-radius:50%;background:#0b0b0d;z-index:3}
+.pass::before{top:-13px}.pass::after{bottom:-13px}
+@media(max-width:980px){.close-grid{grid-template-columns:1fr;gap:38px}}
+@media(max-width:680px){.pass{grid-template-columns:1fr}.pass .stub{border-left:none;border-top:2px dashed rgba(255,255,255,.2);flex-direction:row;flex-wrap:wrap;align-items:flex-end}.pass::before,.pass::after{display:none}.pass .barcode{width:100%}}
+
+.foot{background:#060606;border-top:1px solid #222;padding:40px 0}
+.foot .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.foot img{height:22px;opacity:.8}
+.foot .meta{color:rgba(255,255,255,.46);font-size:12px;text-align:right;line-height:1.6}
+
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .85s cubic-bezier(.16,1,.3,1),transform .85s cubic-bezier(.16,1,.3,1)}
+.js .reveal.in{opacity:1;transform:none}
+.js .hero-copy>*,.js .form-wrap{opacity:0;transform:translateY(18px);transition:opacity .9s,transform .9s}
+.js .hero.loaded .hero-copy>*,.js .hero.loaded .form-wrap{opacity:1;transform:none}
+.js .hero.loaded .kicker{transition-delay:.15s}
+.js .hero.loaded .giant{transition-delay:.26s}
+.js .hero.loaded .factbar{transition-delay:.4s}
+.js .hero.loaded .lead{transition-delay:.5s}
+.js .hero.loaded .form-wrap{transition-delay:.45s}
+
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+@media(max-width:980px){.hero-grid{grid-template-columns:1fr;gap:36px;padding-top:118px}.hero .lead{max-width:100%}}
+@media(max-width:560px){.prow{grid-template-columns:1fr;gap:8px}.foot .meta{text-align:left}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important}.preload{display:none!important}
+.js .reveal,.js .hero-copy>*,.js .form-wrap{opacity:1!important;transform:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="preload" id="preload">
+  <div class="pmeta">
+    <img class="pl-logo" src="https://assets.hotmartcomunidades.com/logos/ES_Hotmart_Logo_02_Color_Negative.svg" alt="Hotmart">
+    <div class="pl-word"><span>El mes que más se factura en el año.</span></div>
+    <div class="pl-word two"><span class="metal">Camino a Black November.</span></div>
+  </div>
+  <div class="ploadbar"><div class="pbarfill"></div></div>
+  <div class="pl-skip">Toca para saltar</div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#top"><img src="https://assets.hotmartcomunidades.com/logos/ES_Hotmart_Logo_02_Color_Negative.svg" alt="Hotmart"></a>
+    <div class="actions">
+      <span class="tier-pill"><span class="td"></span><span class="metal">Platinum</span></span>
+      <a class="nav-cta" href="#registro">Registrarme</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="stars">
+    <span class="star" style="left:13.4%;top:84.7%;--d:3.1s;--o:.22;width:1px"></span>
+    <span class="star" style="left:76.1%;top:47.2%;--d:1.5s;--o:.2;width:1px"></span>
+    <span class="star" style="left:2.8%;top:83.6%;--d:1.7s;--o:.41;width:1px"></span>
+    <span class="star" style="left:69.6%;top:26.6%;--d:3.2s;--o:.34;width:1px"></span>
+    <span class="star" style="left:90.1%;top:3.1%;--d:.1s;--o:.33;width:1px"></span>
+    <span class="star" style="left:68.6%;top:96.9%;--d:2.9s;--o:.32;width:1px"></span>
+    <span class="star" style="left:93.9%;top:55.3%;--d:1.4s;--o:.38;width:1px"></span>
+    <span class="star" style="left:95.2%;top:92.7%;--d:1.7s;--o:.47;width:2px"></span>
+    <span class="star" style="left:10%;top:62.9%;--d:2.9s;--o:.23;width:2px"></span>
+    <span class="star" style="left:33.3%;top:72.1%;--d:2.8s;--o:.48;width:1px"></span>
+    <span class="star" style="left:50.8%;top:91%;--d:.8s;--o:.23;width:1px"></span>
+    <span class="star" style="left:46.9%;top:30.9%;--d:3.4s;--o:.35;width:2px"></span>
+    <span class="star" style="left:39.4%;top:17%;--d:2s;--o:.49;width:1px"></span>
+    <span class="star" style="left:17.7%;top:58.4%;--d:3.4s;--o:.42;width:1px"></span>
+    <span class="star" style="left:3.2%;top:94.4%;--d:.3s;--o:.45;width:1px"></span>
+  </div>
+  <div class="grain"></div>
+
+  <div class="hero-grid wrap">
+    <div class="hero-copy">
+      <div class="eyebrow">Comunidad Platinum · Black November 2026</div>
+      <div class="kicker">Camino a</div>
+      <h1 class="giant metal">Black November</h1>
+      <div class="factbar">
+        <div class="fact"><div class="fl">Fecha</div><div class="fv accent">31 de agosto</div></div>
+        <div class="fact"><div class="fl">Hora</div><div class="fv">9:30 a.m.</div></div>
+        <div class="fact"><div class="fl">Sede</div><div class="fv">Oficinas de Google, CDMX</div></div>
+      </div>
+      <p class="lead">Ya sabes lanzar. La pregunta es si vas a lanzar en grande. Una mañana presencial para armar tu campaña de Black November completa.</p>
+    </div>
+
+    <div class="form-wrap">
+      <div class="orb-back">
+        <span class="oglow"></span>
+        <span class="oring r1"></span>
+        <span class="oring r2"></span>
+        <img src="https://assets.hotmartcomunidades.com/orbs/orb-silver.png" alt="Orbe Platinum">
+      </div>
+      <div class="form-card" id="registro">
+      <span class="limit"><span class="ld"></span>Cupos limitados</span>
+      <h2 class="fhead">Reserva tu lugar</h2>
+      <p class="fsub">Encuentro presencial en las oficinas de Google en Ciudad de México. Los lugares se asignan por orden de registro.</p>
+
+      <div class="field">
+        <label for="nombre">Nombre y apellido</label>
+        <input id="nombre" type="text" autocomplete="name" placeholder="Tu nombre completo" required>
+      </div>
+      <div class="field">
+        <label for="email">Correo electrónico</label>
+        <input id="email" type="email" autocomplete="email" placeholder="tucorreo@dominio.com" required>
+      </div>
+      <button class="btn lg" type="button" id="submitBtn">Confirmar mi registro</button>
+      <p class="ferror" id="formError"></p>
+      <div class="micro">Te enviamos la confirmación y los detalles de acceso a tu correo.</div>
+      <div class="deadline">El registro cierra el <b>15 de agosto</b>.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 01 · DOLOR ===== -->
+<section class="section s-pain" id="porque">
+  <div class="grain"></div>
+  <div class="wrap">
+    <div class="sec-num reveal">01</div>
+    <div class="eyebrow reveal">El punto de partida</div>
+    <h2 class="disp reveal">Lanzar una oferta no es lo mismo que <em>lanzar una campaña.</em></h2>
+    <p class="lead reveal">Tu negocio ya tiene el músculo. Vendes los doce meses, tienes catálogo y sabes ejecutar. Lo que falta en Black November no es capacidad, es ambición de campaña.</p>
+
+    <div class="pains">
+      <div class="prow reveal"><span class="pn">01</span>
+        <div><h3>Sacas una oferta cuando podrías sacar una campaña</h3>
+        <p>Un descuento aislado compite en el mismo terreno que todos. Un bundle con secuencia y upsells juega en otro.</p></div>
+      </div>
+      <div class="prow reveal"><span class="pn">02</span>
+        <div><h3>Eres sólido todo el año y te aplanas en el mes clave</h3>
+        <p>Cuentas que sostienen doce meses de facturación llegan a noviembre con la misma estructura de un martes cualquiera.</p></div>
+      </div>
+      <div class="prow reveal"><span class="pn">03</span>
+        <div><h3>Dejas dinero sobre la mesa después del clic</h3>
+        <p>Sin recorrido de mid a high ticket ni upsells, cada venta rinde una fracción de lo que podría rendir.</p></div>
+      </div>
+    </div>
+
+    <p class="pclose reveal">Este encuentro existe para subir el nivel de tu jugada antes de que empiece octubre.</p>
+  </div>
+</section>
+
+<!-- ===== 02 · QUÉ VAS A ENCONTRAR ===== -->
+<section class="section s-what" id="sesion">
+  <div class="grain"></div>
+  <div class="wrap">
+    <div class="sec-num reveal">02</div>
+    <div class="eyebrow reveal">Qué vas a encontrar</div>
+    <h2 class="disp reveal">Una mañana con una <em>campaña armada,</em> no con apuntes.</h2>
+
+    <div class="bcards">
+      <div class="bcard reveal">
+        <span class="bdot"></span>
+        <h3>Black November explicado con datos</h3>
+        <p>Cómo se comportó realmente en la comunidad hispana: cuándo compra la gente, qué formatos convierten y en qué momento se define el resultado.</p>
+      </div>
+      <div class="bcard reveal">
+        <span class="bdot"></span>
+        <h3>Tu campaña armada, no explicada</h3>
+        <p>Sales del encuentro con la estructura completa: bundle, secuencia de mid a high ticket, upsells, precio y calendario de salida. Formato práctico para ajustar a tu negocio. Incluye qué recursos de Hotmart ya tienes disponibles para sostenerla.</p>
+      </div>
+      <div class="bcard reveal">
+        <span class="bdot"></span>
+        <h3>La sala completa</h3>
+        <p>Lo que no cabe en una pantalla: creadores que facturan como tú, en la misma sala, resolviendo el mismo problema. Aquí también te contamos cómo trabaja la comunidad de aquí a noviembre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 03 · SEDE ===== -->
+<section class="section light" id="sede">
+  <div class="wrap">
+    <div class="venue-grid">
+      <div>
+        <div class="sec-num reveal">03</div>
+        <div class="eyebrow reveal">Dónde nos vemos</div>
+        <h2 class="disp reveal">Oficinas de Google, <em>Ciudad de México.</em></h2>
+        <p class="venue-addr reveal">C. Montes Urales 445, Lomas de Chapultepec, Miguel Hidalgo, 11000 Ciudad de México.</p>
+        <p class="venue-note reveal">El acceso al edificio requiere identificación oficial. Te enviamos las indicaciones completas por correo unos días antes del encuentro.</p>
+        <a class="venue-btn reveal" href="https://maps.google.com/?q=Google+M%C3%A9xico+Montes+Urales+445+Lomas+de+Chapultepec+Ciudad+de+M%C3%A9xico" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Abrir en Google Maps
+        </a>
+      </div>
+      <div class="venue-map reveal">
+        <iframe
+          src="https://www.google.com/maps?q=Montes%20Urales%20445%2C%20Lomas%20de%20Chapultepec%2C%20Miguel%20Hidalgo%2C%2011000%20Ciudad%20de%20M%C3%A9xico&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa · Oficinas de Google, Ciudad de México"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 04 · OBJECIÓN ===== -->
+<section class="section s-pain" id="cualquier">
+  <div class="wrap">
+    <div class="light-grid">
+      <div>
+        <div class="sec-num reveal">04</div>
+        <div class="eyebrow reveal">Para cualquier momento del año</div>
+        <h2 class="disp reveal">Aunque no lances en noviembre, <em>esto te sirve.</em></h2>
+      </div>
+      <div class="dark-note reveal">
+        <p>Black November es el mejor escenario para aplicarlo, pero lo que trabajamos en el encuentro no caduca el 30 de noviembre.</p>
+        <p>Estructurar un bundle, encadenar el recorrido de tu catálogo y diseñar upsells es el mismo trabajo que vas a hacer en cada lanzamiento del año.</p>
+        <p>Si decides no participar en la temporada, sales igual con un método que puedes aplicar cuando quieras.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 04 · SPEAKERS ===== -->
+<section class="section s-speak" id="speakers">
+  <div class="grain"></div>
+  <div class="wrap">
+    <div class="sec-num reveal">05</div>
+    <div class="eyebrow reveal">Quiénes estarán</div>
+    <h2 class="disp reveal">Quién te va a contar <em>cómo se hace.</em></h2>
+    <p class="lead reveal">Anunciamos el line-up de esta edición en las próximas semanas por correo y en el canal de la Comunidad Platinum: si ya estás registrado, te enteras antes que nadie.</p>
+    <div class="spk">
+      <div class="spkc reveal"><div class="spkm"><svg viewBox="0 0 64 64"><circle cx="32" cy="21" r="12"/><path d="M32 37c-12 0-21 7.6-21 17v10h42V54c0-9.4-9-17-21-17z"/></svg><span class="qm">?</span></div><span>Por anunciar</span></div>
+      <div class="spkc reveal"><div class="spkm"><svg viewBox="0 0 64 64"><circle cx="32" cy="21" r="12"/><path d="M32 37c-12 0-21 7.6-21 17v10h42V54c0-9.4-9-17-21-17z"/></svg><span class="qm">?</span></div><span>Por anunciar</span></div>
+      <div class="spkc reveal"><div class="spkm"><svg viewBox="0 0 64 64"><circle cx="32" cy="21" r="12"/><path d="M32 37c-12 0-21 7.6-21 17v10h42V54c0-9.4-9-17-21-17z"/></svg><span class="qm">?</span></div><span>Por anunciar</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 05 · CIERRE ===== -->
+<section class="section closing">
+  <div class="grain"></div>
+  <div class="wrap">
+    <div class="close-grid">
+      <div>
+        <div class="sec-num reveal">06</div>
+        <div class="eyebrow reveal">Último llamado</div>
+        <h2 class="disp reveal">Noviembre se gana <em>en agosto.</em></h2>
+        <p class="lead reveal">Las cuentas que facturan en grande durante Black November no llegan con una oferta: llegan con una campaña. Este encuentro es el punto de partida y los cupos son limitados: el registro cierra el 15 de agosto.</p>
+        <a class="btn lg reveal" href="#registro" style="margin-top:30px">Reservar mi lugar</a>
+      </div>
+
+      <div class="pass reveal">
+        <div class="pmain">
+          <div class="prow2">
+            <span class="pbrand">Comunidades Hotmart</span>
+            <span class="pclass metal">Platinum</span>
+          </div>
+          <div class="ptitle">Camino a Black November</div>
+          <ul>
+            <li><span class="tick"></span>31 de agosto de 2026</li>
+            <li><span class="tick"></span>9:30 a.m. hora de México</li>
+            <li><span class="tick"></span>Oficinas de Google · Ciudad de México</li>
+            <li><span class="tick"></span>Cupos limitados · registro hasta el 15 de agosto</li>
+          </ul>
+        </div>
+        <div class="stub">
+          <div>
+            <div class="sl">Acceso</div>
+            <div class="sv metal">Presencial</div>
+          </div>
+          <div>
+            <div class="sl">Cupo</div>
+            <div class="sv">Limitado</div>
+          </div>
+          <div class="barcode"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="https://assets.hotmartcomunidades.com/logos/ES_Hotmart_Logo_02_Color_Negative.svg" alt="Hotmart">
+    <div class="meta">Comunidades Hotmart · 2026<br>Tu nivel: Platinum · 250K – 499K USD</div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+
+var pl = document.getElementById('preload');
+pl.addEventListener('click', function(){ pl.style.animation='none'; pl.style.display='none'; });
+
+function heroIn(){ var h=document.querySelector('.hero'); if(h) h.classList.add('loaded'); }
+window.addEventListener('load', function(){ setTimeout(heroIn,100); });
+setTimeout(heroIn, 700);
+
+var nav = document.getElementById('nav');
+window.addEventListener('scroll', function(){ nav.classList.toggle('solid', window.scrollY > 40); });
+
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:.14, rootMargin:'0px 0px -6% 0px'});
+document.querySelectorAll('.reveal').forEach(function(el, i){
+  el.style.transitionDelay = ((i % 4) * 0.07) + 's';
+  io.observe(el);
+});
+
+document.querySelectorAll('.bcard').forEach(function(c){
+  c.addEventListener('mousemove', function(ev){
+    var r = c.getBoundingClientRect();
+    c.style.setProperty('--mx', (ev.clientX - r.left) + 'px');
+    c.style.setProperty('--my', (ev.clientY - r.top) + 'px');
+  });
+});
+
+/* ==========================================================
+   ENDPOINT del formulario — pendiente de definir.
+   Vacío: valida y redirige a gracias.html sin enviar datos.
+   ========================================================== */
+var ENDPOINT = "";
+var GRACIAS  = "gracias.html";
+
+var btn = document.getElementById('submitBtn');
+var err = document.getElementById('formError');
+var campos = ['nombre','email'];
+
+function fallar(m){ err.textContent = m; err.style.display = 'block'; }
+
+btn.addEventListener('click', function(){
+  err.style.display = 'none';
+  var data = {};
+  for (var i=0;i<campos.length;i++){
+    var el = document.getElementById(campos[i]);
+    if(!el.value.trim()){ fallar('Completa todos los campos para confirmar tu registro.'); el.focus(); return; }
+    data[campos[i]] = el.value.trim();
+  }
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(data.email)){
+    fallar('Revisa tu correo electrónico.'); document.getElementById('email').focus(); return;
+  }
+  data.tier = 'platinum';
+  data.evento = 'camino-a-black-november-presencial';
+
+  btn.textContent = 'Enviando...'; btn.disabled = true;
+
+  if (ENDPOINT){
+    fetch(ENDPOINT, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data)})
+      .then(function(){ window.location.href = GRACIAS; })
+      .catch(function(){
+        fallar('No pudimos enviar tu registro. Intenta de nuevo en unos segundos.');
+        btn.textContent = 'Confirmar mi registro'; btn.disabled = false;
+      });
+  } else {
+    window.location.href = GRACIAS;
+  }
+});
+</script>
+</body>
+</html>
